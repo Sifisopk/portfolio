@@ -558,6 +558,41 @@ article .icon {
   width: 20vw;
   border-radius: 1rem;
 }
+/*--- About html project card*/
+
+.details-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Keep card-details styles as they are */
+.card-details {
+  margin: 10px;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 600px;
+  border: 2px solid #aaa;
+  border-radius: 24px;
+  transition: 0.3s ease-in-out;
+}
+
+.card-details:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.card-details img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 1rem;
+}
 
 /*project card btn*/
 
