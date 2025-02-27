@@ -50,7 +50,7 @@ nav {
   width: 100%;
   height: 90px;
   line-height: 100px;
-  background: var(--nav-color);
+  background: #1d272e;
   padding-inline: 10vw;
   transition: 0.3s;
   z-index: 100;
@@ -79,10 +79,14 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  color: var(--text-color);
+  color: #a1a1a1;
   font-weight: 500;
   padding-inline: 15px;
   margin-inline: 20px;
+}
+
+.nav-link:hover{
+  color: #42f5d7;
 }
 
 .nav-menu-btn {
@@ -120,7 +124,7 @@ nav {
 .spinner:after {
   width: 85%;
   height: 85%;
-  background-color: #fff;
+  background-color: #1d272e;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -135,7 +139,7 @@ nav {
 .nav-menu-btn i {
   font-size: 28px;
   cursor: pointer;
-  color: var(--nav-icon);
+  color: #a1a1a1;
 }
 
 .active-link {
@@ -158,7 +162,7 @@ nav {
 /*---wrapper---*/
 
 .wrapper {
-  padding-inline: 10vw;
+  padding-inline: 5vw;
 }
 
 label {
@@ -184,7 +188,7 @@ label {
   flex-direction: column;
   width: 50%;
   padding-left: 20px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .featured-text .hello {
@@ -205,7 +209,7 @@ label {
 .typedText {
   font-family: sans-serif;
   color: #42f5d7;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -251,7 +255,7 @@ i {
 /*---social icons---*/
 .social_icons {
   display: flex;
-  margin-top: 30px;
+  margin-top: 3px;
   margin-left: 5px;
   gap: 32px;
 }
@@ -324,6 +328,7 @@ i {
 }
 
 .top-header {
+  width: 100%;
   text-align: center;
   margin-bottom: 5em;
 }
@@ -400,7 +405,7 @@ h1 {
   transition: all 0.5s ease;
 }
 
-/*--- skills box---*/
+
 
 #about {
   position: relative;
@@ -529,44 +534,133 @@ article .icon {
 }
 
 /*--- project cards---*/
-
-.project-card p {
-  font-weight: 600;
-  color: var(--text-color);
-  margin-bottom: 10px;
+.card {
+  background-color: #1d272e;
+  border: 1px solid #42f5b0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  width: 390px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.project-card {
-  padding: 3rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-  flex-direction: column;
-  width: 30%;
-  border: 2px solid #aaa;
-  border-radius: 24px;
-  transition: 0.3s ease-in-out;
-  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  
 }
-
-.project-card:hover {
-  transform: translateY(-10px) scale(1.02);
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
 }
-
-.project-card img {
-  width: 20vw;
-  border-radius: 1rem;
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
-/*--- About html project card*/
-
-.details-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
+.card-img:hover img {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+.card-img .github-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #42f5d7;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card-img:hover .github-icon {
+  opacity: 1;
+}
+.card-content {
   padding: 20px;
 }
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #42f5d7;
+}
+.card p {
+  margin: 0 0 15px;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card .tags span {
+  border: 1px solid #42f5d7;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  color: #42f5d7;
+}
+
+.card i{
+  font-size: 40px;
+}
+
+/*skillls*/
+
+
+.skills-section {
+  margin-bottom: 30px;
+}
+.skills-section h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  border-bottom: 2px solid #007BFF;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-list li:hover{
+  border: 1px solid #42f5d7;
+}
+.skills-list li {
+  background-color:transparent;
+  border: 1px solid #1d272e;
+  border-radius: 8px;
+  padding: 30px;
+  color: #333;
+  font-size: 0.9em;
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-list li i {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.skills-list li strong {
+  color: #42f5d7;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.skills-list li span {
+  color: #777;
+  font-size: 15px;
+}
+
+
 
 /* Keep card-details styles as they are */
 .card-details {
@@ -594,36 +688,90 @@ article .icon {
   border-radius: 1rem;
 }
 
-/*project card btn*/
+/*Flappy game styling*/
 
-.btn-group {
-  display: flex;
-  gap: 1rem;
+canvas {
+  display: block;
+  margin: 50px 0px 0px 50px ;
+  border-radius: 10px;
+  background-color: #f0f0f0;
 }
 
-.btn-1 {
-  text-decoration: none;
-  border: 1px solid #000;
-  border-radius: 3rem;
-  padding: 0.5rem 1.5rem;
+
+.game-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.flappy-btn {
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+  transform: translatey(200%);
+  padding: 1.5rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
-  font-weight: 500;
-  text-wrap: nowrap;
-  transition: 0.2s ease-in-out;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  min-width: 100px;
+  z-index: 1;
 }
 
-.project-card:hover .btn-1:hover {
-  color: #fff;
-  border: 2px solid#fff;
-  background-color: #000;
+.neon-pulse {
+  border: 2px solid #0ff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  overflow: visible;
 }
 
-.project-card .btn-1 a {
-  color: #000;
+.neon-pulse::before,
+.neon-pulse::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 2px solid #0ff;
+  border-radius: inherit;
+  animation: pulseOut 2s ease-out infinite;
+  opacity: 0;
 }
 
-.project-card:hover .btn-1:hover a {
-  color: #fff;
+.neon-pulse::after {
+  animation-delay: 1s;
+}
+
+@keyframes pulseOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+#startBtn {
+  top: 50%;
+}
+
+#restartBtn {
+  top: 50%;
+}
+
+.instructions {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: 600;
+  color: #42f5d7;
 }
 
 /*---contact box---*/
@@ -635,8 +783,9 @@ article .icon {
   justify-content: center;
   align-items: center;
   margin-top: 0;
+  margin-left: 100px;
   padding: 20px 40px;
-  width: 100%;
+  width: 80%;
   height: 380px;
   border: 2px solid #aaa;
   border-radius: 20px;
@@ -675,7 +824,7 @@ article .icon {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 100%;
+  width: 80%;
 }
 
 .form-inputs {
@@ -780,6 +929,7 @@ footer {
   color: #fff;
 }
 
+/*--Responsive design--*/
 /*---media query 1024px---*/
 
 @media only screen and (max-width: 1040px) {
@@ -856,12 +1006,20 @@ footer {
     width: 100%;
     margin-top: 65px;
   }
+  
 
   .image,
   .image img {
     width: 150px;
     height: 150px;
   }
+
+  .card img {
+    width: 100%;
+    height: 125px;
+  }
+  
+  
 
   .row {
     display: flex;
@@ -889,7 +1047,7 @@ footer {
     width: 80%;
   }
 
-  .project-card {
+  .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -900,6 +1058,10 @@ footer {
     display: flex;
     align-items: center;
     margin-left: 60%;
+  }
+
+  .game-container{
+    display: none;
   }
 }
 
@@ -913,9 +1075,23 @@ footer {
   .project-box {
     width: 100%;
   }
+.contact-info{
+  margin-left: 0px;
+  width: 80%;
+}
+  .card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-  .project-card {
+  .card-details {
     width: 100%;
+  }
+
+  .form-control{
+    margin-right: 20px;
   }
 
   .form-inputs {
@@ -931,6 +1107,10 @@ footer {
   }
 
   .spinner {
+    display: none;
+  }
+
+  .game-container{
     display: none;
   }
 }
