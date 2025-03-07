@@ -86,26 +86,26 @@ function scrollActive() {
 
 window.addEventListener("scroll", scrollActive);
 
-//floppy game
+//flappy game
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
 // Load images
 const bgImg = new Image();
-bgImg.src = "images/background.png"; 
+bgImg.src = "images/sky.jpg"; 
 
 const birdImg = new Image();
-birdImg.src = "images/rocket.png" ;
+birdImg.src = "images/airship.png" ;
 
 const pipeTopImg = new Image();
-pipeTopImg.src = "images/egg-top.png"; 
+pipeTopImg.src = "images/building-top.png"; 
 
 const pipeBottomImg = new Image();
-pipeBottomImg.src = "images/egg-bottom.png"; 
+pipeBottomImg.src = "images/building-bottom.png"; 
 
 // Game variables
-let dev = { x: 50, y: 150, width: 40, height: 40, gravity: 0.5, lift: -7, velocity: 0 };
+let dev = { x: 50, y: 100, width: 40, height: 27, gravity: 0.5, lift: -5, velocity: 0 };
 let pipes = [];
 let frame = 0;
 let gameOver = false;
@@ -157,7 +157,7 @@ function update() {
 
     // Generate pipes (obstacles) every 100 frames
     if (frame % 100 === 0) {
-        let gap = 140; // Increased space between pipes
+        let gap = 80; // Increased space between pipes
         let topHeight = Math.random() * (canvas.height - gap - 40);
         
         pipes.push({ x: canvas.width, y: 0, width: 45, height: topHeight, type: "top" });
