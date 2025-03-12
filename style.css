@@ -1079,8 +1079,8 @@ footer {
   }
 
   .skills-list li {
-    flex: 1 1 48%; /* Ensures they stay side by side */
-    min-width: 140px; /* Prevents elements from shrinking too much */
+    flex: 1 1 35%; /* Ensures they stay side by side */
+    min-width: 130px; /* Prevents elements from shrinking too much */
   }
   
   .project-box {
