@@ -391,24 +391,12 @@ h1 {
 }
 
 .about-me p {
+  text-align: justify;
   margin-top: 10px;
   color: var(--text-color);
 }
 
-.about-info .about-me-btn {
-  text-decoration: none;
-  font-size: 16px;
-  padding: 10px 20px;
-  cursor: pointer;
-  border: none;
-  border-radius: 20px;
-  background: #000;
-  color: #f4f4f4;
-  margin-top: 20px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  transition: all 0.5s ease;
-}
+
 
 
 
@@ -420,7 +408,7 @@ h1 {
   color: var(--text-color);
   text-align: center;
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -801,6 +789,12 @@ canvas {
   cursor: pointer;
 }
 
+#email-icon {
+  font-size: 70px;
+  color: var(--text-color);
+  padding-bottom: 20px;
+}
+
 .contact-info h2 {
   color: var(--text-color);
   margin-bottom: 20px;
@@ -820,7 +814,8 @@ canvas {
 
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
-.contact-info:hover.contact-info i {
+.contact-info:hover.contact-info i,
+.contact-info:hover.contact-info #email-icon {
   color: #fff;
   z-index: 2;
 }
@@ -994,6 +989,8 @@ footer {
     height: 100vh;
   }
 
+
+  
   .featured-text {
     width: 100%;
     order: 2;
@@ -1180,34 +1177,6 @@ i {
 
   .game-container, .skill{
     display:none ;
-  }
-
-  canvas{
-    width: 100%;
-    height: 250px;
-  }
-
-  #startBtn {
-    top: 50%;
-    left: 25%;
-  }
-  
-  #restartBtn {
-    top: 50%;
-    left: 25%;
-  }
-  
-  .instructions {
-    position: absolute;
-    top: 35%;
-    left: 48%;
-    transform: translateX(-50%);
-    font-size: 15px;
-    font-weight: 600;
-    color: #42f5d7;
-    padding: 10px 1px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.4);
   }
 
 
