@@ -29,7 +29,7 @@
 }
 
 body {
-  background-color: #f4f4f4;;
+  background-color: #fff;;
 }
 
 .container {
@@ -542,7 +542,7 @@ article .icon {
 .project-card {
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 10px;
   width: 380px;
@@ -815,7 +815,7 @@ canvas {
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i,
-.contact-info:hover.contact-info #email-icon {
+.contact-info:hover.contact-info img {
   color: #fff;
   z-index: 2;
 }
