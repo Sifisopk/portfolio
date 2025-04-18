@@ -10,7 +10,7 @@ function myMenuFunction() {
 
 /*---typing effect*/
 var typingEffect = new Typed(".typedText", {
-  strings: ["Junior developer", "coder", "UX Designer"],
+  strings: ["Junior developer", "coder"],
 
   loop: true,
   typeSpeed: 50,
@@ -36,6 +36,7 @@ sr.reveal(".featured-image", { delay: 320 });
 
 sr.reveal(".project-box", { interval: 200 });
 sr.reveal(".card", { interval: 200 });
+sr.reveal(".certificate-gallery img", { interval: 200 });
 sr.reveal(".top-hearder", {});
 
 const srLeft = ScrollReveal({
