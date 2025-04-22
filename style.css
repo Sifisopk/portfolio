@@ -1120,7 +1120,7 @@ footer {
 
   .skills-list li {
     flex: 1 1 35%; /* Ensures they stay side by side */
-    min-width: 130px; /* Prevents elements from shrinking too much */
+    min-width: 130px;
   }
   
   .certificate-gallery img{
@@ -1215,17 +1215,17 @@ i {
   }
 
   .featured-image {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    min-height: 80vh;
-        width: 900px;
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   
   }
   
   .image {
     margin-top: 10%;
-
-    overflow: hidden;
+    
     animation: imgfloat 5s ease-in-out infinite;
   }
 
