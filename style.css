@@ -1021,13 +1021,17 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(250, 250, 250, 0.7);
+    background: rgba(112, 107, 107, 0.2);
     backdrop-filter: blur(5px);
     width: 300px;
-    border-radius: 0px 30px 0px 30px;
+    border-radius: 0px 0px 30px 0px;
     min-height: 450px;
     height: 50vh;
     transition: 0.3s;
+  }
+  
+  .nav-menu a{
+    color:#dfdfdf;
   }
 
   .nav_menu_list {
