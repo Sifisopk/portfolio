@@ -108,9 +108,9 @@ const rocketImg = new Image();
 rocketImg.src = "images/missile.png"; // Add rocket image
 
 // Load sounds
-const flapSound = new Audio("sounds/flap.mp3");
-const scoreSound = new Audio("sounds/score.mp3");
-const gameOverSound = new Audio("sounds/gameover.mp3");
+const flapSound = new Audio("sounds/");
+const scoreSound = new Audio("sounds/");
+const gameOverSound = new Audio("sounds/");
 
 // Game variables
 let dev = { x: 50, y: 100, width: 40, height: 27, gravity: 0.5, lift: -5, velocity: 0 };
@@ -164,6 +164,8 @@ function update() {
     // Prevent falling off screen
     if (dev.y + dev.height > canvas.height || dev.y < 0) {
         gameOver = true;
+        flapSound.pause();
+flapSound.currentTime = 0; // Reset to start
         gameOverSound.play(); // Play game over sound
         restartBtn.style.display = "block";
         instructions.style.display = "block";
@@ -206,6 +208,8 @@ function update() {
             dev.y < pipes[i].y + pipes[i].height &&
             dev.y + dev.height > pipes[i].y) {
             gameOver = true;
+            flapSound.pause();
+flapSound.currentTime = 0; // Reset to start
             gameOverSound.play(); // Play game over sound
             restartBtn.style.display = "block";
             instructions.style.display = "block";
@@ -228,6 +232,8 @@ function update() {
             dev.y < rockets[i].y + rockets[i].height &&
             dev.y + dev.height > rockets[i].y) {
             gameOver = true;
+            flapSound.pause();
+flapSound.currentTime = 0; // Reset to start
             gameOverSound.play(); // Play game over sound
             restartBtn.style.display = "block";
             instructions.style.display = "block";
@@ -287,6 +293,10 @@ function resetGame() {
     nextSwitchScore = 120; // Reset the score threshold
     restartBtn.style.display = "none";
 }
+
+
+
+//game over
 
 // Game loop
 function gameLoop() {

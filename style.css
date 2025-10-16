@@ -28,10 +28,10 @@
   --mode-color: #ccc;
 }
 
-/*
+
 body {
   background-color: #fff;;
-}*/
+}
 
 .container {
   width: 100%;
@@ -51,7 +51,7 @@ nav {
   width: 100%;
   height: 90px;
   line-height: 100px;
-  background: #1d272e;
+  background: rgb(55, 88, 249);
   padding-inline: 10vw;
   transition: 0.3s;
   z-index: 100;
@@ -64,7 +64,7 @@ nav {
 .nav-name {
   font-size: 30px;
   font-weight: 600;
-  color: #42f5d7;
+  color: #fff;
 }
 
 .nav-menu,
@@ -80,7 +80,7 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  color: #a1a1a1;
+  color: #fff;
   font-weight: 500;
   padding-inline: 15px;
   margin-inline: 20px;
@@ -125,7 +125,7 @@ nav {
 .spinner:after {
   width: 85%;
   height: 85%;
-  background-color: #1d272e;
+  background-color: rgb(55, 88, 249);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -194,31 +194,31 @@ label {
 
 .featured-text .hello {
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: -20px;
-   color: #dfdfdf;
+   color: #555454;
 }
 
 .featured-name {
   font-size: 50px;
   font-weight: 600;
   margin-block: 20px;
-  color: #42f5d7;
+  color: rgb(55, 88, 249);
   margin-bottom: 10px;
 }
 
 .typedText {
   font-family: sans-serif;
-  color: #42f5d7;
+  color: rgb(55, 88, 249);
   font-size: 44px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
 .text-info {
   font-size: 16px;
   margin-bottom: 30px;
-   color: #707070;
+   color: #555454;
 }
 
 .text-btn {
@@ -231,8 +231,8 @@ label {
 .text-btn .btn {
   border: none;
   border: 1px solid #42f5d7;
-  color: #f4f4f4;
-  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.5);
+  color: #555454;
+  box-shadow: 0px 1px 5px 3px rgb(55, 88, 249);
 }
 
 .btn {
@@ -274,9 +274,9 @@ i {
   align-items: center;
   width: 50px;
   height: 50px;
-  color: #dfdfdf;
+  color: #555454;
   border-radius: 50%;
-  box-shadow: 0px 1px 5px 3px #42f5d7;
+  box-shadow: 0px 1px 5px 3px rgb(55, 88, 249);
 }
 
 .icon_circle {
@@ -347,7 +347,7 @@ i {
 
 .top-header h1 {
   font-weight: 600;
-color: #dfdfdf;
+color: #555454;
   margin-bottom: 10px;
 }
 
@@ -391,13 +391,13 @@ color: #dfdfdf;
 
 .about-me h2,
 h1 {
-  color: #dfdfdf;
+  color: #555454;
 }
 
 .about-me p {
   text-align: justify;
   margin-top: 10px;
-  color: #979797;
+  color: #555454;
 }
 
 
@@ -409,7 +409,7 @@ h1 {
 }
 
 .experience-sub-title {
-  color: #dfdfdf;
+  color: #555454;
   text-align: center;
   font-weight: 600;
   font-size: 1.5rem;
@@ -433,7 +433,7 @@ h1 {
 
 #description{
   text-align: center;
-  color: #979797;
+  color: #555454;
 }
 
 article {
@@ -448,6 +448,7 @@ article .icon {
 }
 
 /*---skill box---*/
+
 .skill {
   position: relative;
   max-width: 600px;
@@ -468,7 +469,7 @@ article .icon {
   display: block;
   font-size: 14px;
   font-weight: 600;
-  color: var(--text-color);
+  color: red;
 }
 
 /*---project-box---*/
@@ -504,11 +505,11 @@ article .icon {
 }
 
 .project-box h3{
-  color: #dfdfdf;
+  color: #555454;
 }
 .project-box label {
   font-size: 15px;
-  color: #979797;
+  color: #555454;
 }
 
 .project-box::after,
@@ -516,8 +517,7 @@ article .icon {
   content: "";
   position: absolute;
   bottom: -100%;
-  background: #42f5d7;
-  opacity: 0.4;
+  background: rgb(55, 88, 249);
   width: 100%;
   height: 100%;
   transition: 0.4s;
@@ -547,6 +547,7 @@ article .icon {
 #certificates {
   padding: 40px 20px;
   text-align: center;
+  position: relative;
  
 }
 
@@ -559,7 +560,7 @@ article .icon {
 }
 
 .certificate-gallery img {
-  border: 15px solid rgba(0, 0, 0, 0.2);
+  border: 5px solid rgb(176, 180, 199);
   width: 500px;
   height: 300px;
   border-radius: 10px;
@@ -580,7 +581,7 @@ article .icon {
 }
 
 .top-header h2{
-  color: #dfdfdf;
+  color: #555454;
 }
 
 .project-card {
@@ -594,7 +595,7 @@ article .icon {
 }
 
 .project-card:hover {
-  border: 1px solid #42f5d7;
+  border: 1px solid rgb(55, 88, 249);
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -603,12 +604,13 @@ article .icon {
   text-align: center;
   margin: 0 0 10px;
   font-size: 1.5em;
-  color: #dfdfdf;
+  color: #555454;
 }
 
 .project-card p {
-  color: #979797;
+  color: #555454;
   font-size: 0.9em;
+  font-weight: 500;
   line-height: 1.5;
   margin: 0 0 15px;
   padding-top: 10px;
@@ -627,7 +629,8 @@ article .icon {
   border-radius: 4px;
   padding: 5px 10px;
   font-size: 0.9em;
-  color: #dfdfdf;
+  font-weight: 600;
+  color: #555454;
 }
 
 .project-card .links {
@@ -660,7 +663,7 @@ article .icon {
   margin-bottom: 30px;
 }
 .skills-section h3 {
-  color: #dfdfdf;
+  color: #555454;
   margin-bottom: 15px;
   font-size: 1.2em;
   border-bottom: 2px solid #007BFF;
@@ -678,9 +681,9 @@ article .icon {
 
 .skills-list li:hover {
   border: 1px solid #42f5d7;
-  background-color: rgba(66, 245, 215, 0.1);
-  box-shadow: 0 0 10px rgba(66, 245, 215, 0.5);
+  box-shadow: 0 0 10px rgb(55, 88, 249);
 }
+
 .skills-list li {
   background-color:transparent;
   border: 1px solid #1d272e;
@@ -712,7 +715,8 @@ article .icon {
   margin-bottom: 5px;
 }
 .skills-list li span {
-  color: #979797;
+  color: #555454;
+  font-weight: 600;
   font-size: 15px;
 }
 
@@ -841,7 +845,7 @@ canvas {
 }
 
 .contact-info h2 {
-  color: #dfdfdf;
+  color: #555454;
   margin-bottom: 20px;
 }
 
@@ -849,7 +853,8 @@ canvas {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #979797;
+  color: #555454;
+  font-weight: 500;
   margin-block: 5px;
 }
 
@@ -868,7 +873,8 @@ canvas {
 /*---contact form---*/
 
 .top-header span{
-  color: #979797;
+  color: #555454;
+  font-weight: 500;
 }
 
 .form-control {
@@ -887,7 +893,8 @@ canvas {
 .input-field {
   width: 50%;
   height: 55px;
-  color: #dfdfdf;
+  color: #555454;
+  font-weight: 600;
   background: transparent;
   border: 2px solid #aaa;
   padding-inline: 20px;
@@ -898,6 +905,8 @@ canvas {
 .input-subject {
   width: 100%;
   height: 55px;
+  color: #555454;
+  font-weight: 600;
   background: transparent;
   border: 2px solid #aaa;
   border-radius: 10px;
@@ -909,10 +918,11 @@ canvas {
 textarea {
   width: 100%;
   height: 250px;
+  color: #555454;
+  font-weight: 600;
   background: transparent;
   border: 2px solid #aaa;
   padding: 15px 20px;
-  color: #dfdfdf;
   border-radius: 10px;
   outline: none;
   resize: none;
@@ -927,14 +937,16 @@ textarea {
   border: none;
   background: transparent;
   padding: 10px 20px;
-  border: 1px solid #42f5d7;
+  border: 1px solid rgb(55, 88, 249);
   border-radius: 30px;
-  color: #fff;
+  color: #555454;
+  font-weight: 700;
 }
 
 .form-button :hover{
   transition: 500ms;
-  background-color: #42f5d7;
+  color: #fff;
+  background-color: rgb(55, 88, 249);
 }
 
 .form-button i {
@@ -951,7 +963,7 @@ footer {
   align-items: center;
   flex-direction: column;
   row-gap: 30px;
-   background: transparent;
+   background:rgb(55, 88, 249);
    border-top: 1px solid #707070;
   padding-block: 40px 60px;
 }
