@@ -469,7 +469,6 @@ article .icon {
   display: block;
   font-size: 14px;
   font-weight: 600;
-  color: red;
 }
 
 /*---project-box---*/
@@ -500,7 +499,7 @@ article .icon {
 
 .project-box i {
   font-size: 50px;
-  color: #42f5d7;
+  color: rgb(55, 88, 249);
   margin-bottom: 25px;
 }
 
@@ -710,7 +709,7 @@ article .icon {
 }
 
 .skills-list li strong {
-  color: #42f5d7;
+  color: rgb(55, 88, 249);
   font-size: 25px;
   margin-bottom: 5px;
 }
@@ -1033,7 +1032,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(112, 107, 107, 0.2);
+    background: rgb(55, 88, 249,0.8);
     backdrop-filter: blur(5px);
     width: 300px;
     border-radius: 0px 0px 30px 0px;
@@ -1179,7 +1178,7 @@ footer {
 
 .typedText {
   font-family: sans-serif;
-  color: #42f5d7;
+  color: rgb(55, 88, 249);
   font-size: 37px;
   font-weight: 600;
   text-transform: capitalize;
@@ -1201,7 +1200,7 @@ footer {
   padding: 2px 5px;
   cursor: pointer;
   border-radius: 8px;
-  background: #000;
+  background:transparent;
   font-weight: 500;
   transition: all 0.5s ease;
 }
