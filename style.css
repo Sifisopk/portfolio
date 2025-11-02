@@ -140,7 +140,7 @@ nav {
 .nav-menu-btn i {
   font-size: 28px;
   cursor: pointer;
-  color: #fff;
+  color: #ffff;
 }
 
 .active-link {
@@ -203,13 +203,13 @@ label {
   font-size: 50px;
   font-weight: 600;
   margin-block: 20px;
-  color: #42f5d7;
+  color: rgb(55, 88, 249);
   margin-bottom: 10px;
 }
 
 .typedText {
   font-family: sans-serif;
-  color: #42f5d7;
+  color: rgb(55, 88, 249);
   font-size: 44px;
   font-weight: 700;
   text-transform: capitalize;
@@ -230,9 +230,9 @@ label {
 
 .text-btn .btn {
   border: none;
-  border: 1px solid #42f5d7;
+  border: 1px solid rgb(55, 88, 249);
   color: #555454;
-  box-shadow: 0px 1px 5px 3px #42f5d7;
+  box-shadow: 0px 1px 5px 3px rgb(55, 88, 249);
 }
 
 .btn {
@@ -276,7 +276,7 @@ i {
   height: 50px;
   color: #555454;
   border-radius: 50%;
-  box-shadow: 0px 1px 5px 3px #42f5d7;
+  box-shadow: 0px 1px 5px 3px rgb(55, 88, 249);
 }
 
 .icon_circle {
@@ -680,7 +680,7 @@ article .icon {
 
 .skills-list li:hover {
   border: 1px solid #42f5d7;
-  box-shadow: 0 0 10px #42f5d7;
+  box-shadow: 0 0 10px rgb(55, 88, 249);
 }
 
 .skills-list li {
@@ -709,7 +709,7 @@ article .icon {
 }
 
 .skills-list li strong {
-  color: #42f5d7;
+  color: rgb(55, 88, 249);
   font-size: 25px;
   margin-bottom: 5px;
 }
@@ -1162,6 +1162,7 @@ footer {
 
 .hello p{
   margin-top: 35%;
+  font-size: 40px;
 }
   
 .featured-image, .image{
