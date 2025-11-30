@@ -1080,14 +1080,14 @@ footer {
     justify-content: center;
     min-height: 150px;
     width: 100%;
-    margin-top: 65px;
+    margin-top: 95px;
   }
   
 
   .image,
   .image img {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
   }
 
 .card{
