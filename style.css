@@ -2221,7 +2221,7 @@ textarea {
   border: none;
   background: transparent;
   padding: 10px 20px;
-  border: 1px solid rgb(55, 88, 249);
+  border: 1px solid #AFC9DC ;
   border-radius: 30px;
   color: #555454;
   font-weight: 700;
@@ -2230,7 +2230,7 @@ textarea {
 .form-button :hover{
   transition: 500ms;
   color: #fff;
-  background-color: rgb(55, 88, 249);
+  background-color: #AFC9DC;
 }
 
 .form-button i {
@@ -2248,7 +2248,7 @@ footer {
   flex-direction: column;
   row-gap: 30px;
    background:#AFC9DC;
-   border-top: 1px solid #707070;
+   border-top: 1px solid #42f5d7;
   padding-block: 40px 60px;
 }
 
@@ -2327,7 +2327,7 @@ footer {
   }
   
   .nav-menu a{
-    color:#dfdfdf;
+    color:#fff;
   }
 
   .nav_menu_list {
