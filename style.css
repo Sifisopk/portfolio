@@ -375,13 +375,7 @@ label {
 
 
 
-.featured-name {
-  font-size: 50px;
-  font-weight: 600;
-  margin-block: 20px;
-  color: #AFC9DC;
-  margin-bottom: 10px;
-}
+
 
 
 .text-info {
@@ -469,7 +463,7 @@ i {
 }
 
 .social_icons .icon i {
-  font-size: 15px;  
+  font-size: 20px;  
   line-height: 1;
 }
 
@@ -1361,7 +1355,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 35%;
+  margin-left: 30%;
   border: none;
   background: transparent;
   padding: 10px 20px;
@@ -1478,7 +1472,7 @@ section, div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #AFC9DC;
+    background: #0d1f47;
     backdrop-filter: blur(5px);
     width: 300px;
     border-radius: 0px 0px 30px 0px;
@@ -1491,6 +1485,12 @@ section, div {
     color:#fff;
   }
 
+  .nav-menu a:hover{
+    color: #42f5d7;
+    background: none;
+    outline: none;
+  }
+
   .nav_menu_list {
     flex-direction: column;
   }
@@ -1499,15 +1499,13 @@ section, div {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-.nav-menu-btn {
-  background: transparent;
+      background: transparent;
   border: none;
   outline: none;
   box-shadow: none;
   -webkit-tap-highlight-color: transparent;
-}
+  }
+
 
 
   #home.featured-box {
@@ -1687,17 +1685,41 @@ section, div {
     }
 
  
+.top-header-skills{
+font-size:17px ;
+}
 
+#about-title{
+  font-size: 23px;
+}
   .hello{
+    font-size: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+ .nav-menu-btn {
+    color: #000;
+     margin-top: -15%;
+  }
 
+  .nav-logo {
+  position: relative;
+  margin-top: 2%;
+  width: 7%;
+}
+
+.video-container {
+  margin-top: 15%;
+  position: relative;
+  width: 100vw;
+  height: 140px;
+  overflow: hidden;
+}
   
 .hello h2{
-  margin-top: 5%;
+  margin-top: -55px;
   font-size: 42px;
   font-weight: 700;
   line-height: 72px;
@@ -1715,15 +1737,23 @@ section, div {
   .certificate-gallery img{
     width: 100%;
   }
+
+  .certificate-card{
+      margin-left: 30px;
+      width: 95%;
+  }
   
   .project-box {
-    width: 100%;
+    width: 80%;
   }
 .contact-info{
 
   width: 100%;
 }
 
+.contact-info p{
+text-align: center;
+}
 
 
 .social_icons {
@@ -1756,17 +1786,43 @@ i {
 }
 
   .card {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .project-card {
-    margin: 10px 0px;
-    width: 100%;
+    margin: 10px ;
+    margin-left: 30px;
+    width: 95%;
     display: flex;
-    flex-direction: column;
+flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+  }
+
+  .pic-1 {
+  width: 100%;
+  height: 150px;        
+  object-fit: cover;     
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.pic-2 {
+  width: 100%;
+  height: 180px;        
+  object-fit: cover;     
+  border-radius: 8px;
+  margin-bottom: 15px;
+  -webkit-transform: scale(0.8);
+	transform: scale(0.8);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+  .code-btn{
+    margin-right: 10px;
   }
 
   .card-details {
@@ -1776,6 +1832,21 @@ i {
   .form-control{
     width: 100%;
   }
+
+.form-button .btn {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20%;
+  border: none;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #0d1f47;
+  font-weight: 700;
+}
 
   .form-inputs {
     flex-direction: column;
