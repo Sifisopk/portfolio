@@ -9,7 +9,11 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css" />
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet">
   <meta name="keywords"
     content="Junior Web Developer, App Developer, Sifiso Khausela,sfiso,sifiso,sfisodev, Web Development Portfolio, Mobile App Projects." />
   <meta name="keywords"
@@ -26,30 +30,33 @@
 <body>
   <!--Navigation menu-->
   <div class="container">
+
     <nav id="header">
       <div class="nav-logo">
-        <p class="nav-name">SfisoDev</p>
+        <a class="nav-name" href="#home">SfisoDev</a>
       </div>
       <div class="nav-menu" id="myNavMenu">
+
         <ul class="nav_menu_list">
           <li class="nav_list">
-            <a href="#home" class="nav-link ">Home</a>
-            <div class="circle"></div>
+            <a href="#about" class="nav-link ">About</a>
           </li>
           <li class="nav_list">
-            <a href="#about" class="nav-link">About </a>
-            <div class="circle"></div>
+            <a href="#skills" class="nav-link">skills </a>
           </li>
           <li class="nav_list">
             <a href="#projects-page" class="nav-link">Projects</a>
-            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#certificate-page" class="nav-link">Certificates</a>
           </li>
           <li class="nav_list">
             <a href="#contact" class="nav-link">Contact</a>
-            <div class="circle"></div>
           </li>
+
         </ul>
       </div>
+
       <div class="spinner"></div>
       <div class="nav-menu-btn">
         <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -64,85 +71,102 @@
     <main class="wrapper">
 
 
+
+
       <section class="featured-box" id="home">
+
+
+
         <div class="featured-text">
+          <div class="video-container">
+            <video class="runner" src="videos/Sweet run cycle (1).webm" autoplay loop muted playsinline>
+            </video>
+
+            <div class="speech-bubble">Hy, have a look! 👋</div>
+          </div>
+
+
+          <p id="Available">
+
+            <span class="status-dot"></span>
+            Available for opportunities
+          </p>
+
           <div class="hello">
-            <p>Hi, i'm Sifiso a</p>
+            <h2> <span style="color: #000;">Hi, i'm </span> Sifiso Khausela</h2>
           </div>
-          <div class="featured-name">
-            <span class="typedText"></span>
-          </div>
+
           <div class="text-info">
             <p>
-              A junior developer with skills in web and mobile app development eager to create
-              innovative solutions.
+              A junior developer with skills in web and mobile app development, eager to create innovative solutions
+              that make a difference.
             </p>
           </div>
 
           <div class="text-btn">
+
+            <a href="#projects-page" class="work-btn">View My Work <i class="fa-solid fa-arrow-right"></i></a>
             <a href="assets/SIFISO KHAUSELA CV.pdf" target="_blank" class="btn">
-              <strong>Download CV</strong> <i class="uil uil-file"> </i>
+              <strong>Download CV</strong> <i class="fa-solid fa-download"></i>
             </a>
-            <div class="social_icons">
-              <article>
-                <a href="https://www.linkedin.com/in/sifiso-khausela/" target="_blank">
-                  <div class="icon">
-                    <i class="uil uil-linkedin-alt"></i>
-                  </div>
-                </a>
-
-                <a href="https://github.com/Sifisopk" target="_blank">
-                  <div class="icon">
-                    <i class="uil uil-github-alt"></i>
-                  </div>
-                </a>
-
-              </article>
-            </div>
           </div>
+          <div class="social_icons">
+            <article>
+              <a href="https://www.linkedin.com/in/sifiso-khausela/" target="_blank">
+                <div class="icon">
+                  <i class="uil uil-linkedin-alt"></i>
+                </div>
+              </a>
 
+              <a href="https://github.com/Sifisopk" target="_blank">
+                <div class="icon">
+                  <i class="uil uil-github-alt"></i>
+                </div>
+              </a>
 
+            </article>
 
-        </div>
-        <div class="featured-image">
-          <div class="image">
-            <img src="images/cartoon pic.png" alt="">
           </div>
         </div>
       </section>
+
       <!--About section-->
       <section class="section" id="about">
-        <div class="top-header">
-          <img src="images/instructions.png" width="35px" height="35px">
-          <!--<a href="https://www.flaticon.com/free-icons/information" title="information icons">Information icons created by Creative Sole - Flaticon</a>-->
-          <h1>About me</h1>
+
+
+
+        <div class="top-header-skills">
+          <p class="skills-section-p">About Me
+          </p>
+          <h1>Passionate About Building</h1>
+          <h1 id="about-title">Innovative Solutions</h1>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="about-info">
-              <figure class="about-me">
-                <figcaption>
-                  <img src="" alt="" class="profile">
-                  <h2 class="experience-sub-title">SIFISO KHAUSELA</h2>
-                  <!--<h6 class="experience-sub-title">junior web & app Developer</h6>-->
-                  <p>
-                    Hi, I'm Sifiso, a passionate Developer currently pursuing a Diploma in Information
-                    Technology (Software Development).
+        <div class="about-info">
 
-                    I specialize in mobile app and web development, with a strong interest in building user-friendly
-                    software, interactive web experiences, and mobile applications. I enjoy turning ideas into
-                    functional projects and continuously explore new technologies to sharpen my skills.
+          <figure class="about-me">
+            <figcaption>
+              <img src="" alt="" class="profile">
+              <p>
+                Hi, I'm Sifiso, a passionate Developer currently pursuing a <span style="color: #000;">
+                  <strong>Diploma in
+                    Information Technology
+                    (Software Development). </strong> </span> I specialize in mobile app and web development, with a
+                strong
+                interest in
+                building user-friendly software, interactive web experiences, and mobile applications.
+                <br><br>
+                I enjoy turning ideas into functional projects and continuously explore new technologies to sharpen
+                my skills. I work with <span style="color: #000;">
+                  <strong>Java, Kotlin, HTML, CSS, JavaScript, TypeScript, </strong> </span>.
 
-                    <br><br>Technologies I work with: Java, Kotlin, HTML, CSS, JavaScript, and Git.
 
-                    Feel free to check out my projects below or reach out to collaborate!
-                  </p>
-              </figure>
+              </p>
+          </figure>
 
-            </div>
-          </div>
-          <!--skils section-->
-          <div class="skill">
+        </div>
+
+        <!--game section-->
+        <!-- <div class="skill">
             <div class="experience-details-container">
               <div class="about-container">
                 <div class="details-container">
@@ -162,255 +186,275 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div> -->
+
       </section>
-      <div class="skills-section">
-        <div class="top-header">
-          <img src="images/skill-development.png" width="35px" height="35px">
-          <!--<a href="https://www.flaticon.com/free-icons/critical-thinking" title="critical thinking icons">Critical thinking icons created by Karyative - Flaticon</a>-->
-          <h1>My Skills</h1>
+
+
+      <div class="skills-section" id="skills">
+
+        <div class="top-header-skills">
+          <p class="skills-section-p">Technical Skills
+          </p>
+          <h1>Technologies I Work With
+          </h1>
+          <h3>A diverse set of tools and languages to bring ideas to life
         </div>
-        <h3>Front End & Back End</h3>
+
+
+        </h3>
         <ul class="skills-list">
           <li>
             <img class="icon-img" src="images/html5.svg" alt="">
             <strong>HTML</strong>
-            <span>Proficient</span>
+
           </li>
+
           <li>
             <img class="icon-img" src="images/css3.svg" alt="">
             <strong>CSS</strong>
-            <span>Proficient</span>
           </li>
+
           <li>
             <img class="icon-img" src="images/javascript.svg" alt="">
             <strong>JavaScript</strong>
-            <span>intermediate</span>
           </li>
           <li>
             <img class="icon-img" src="images/typescript.svg" alt="">
             <strong>TypeScript</strong>
-            <span>intermediate</span>
           </li>
           <li>
             <img class="icon-img" src="images/java.svg" alt="">
             <strong>Java</strong>
-            <span>intermediate</span>
           </li>
           <li>
             <img class="icon-img" src="images/kotlin.svg" alt="">
             <strong>Kotlin</strong>
-            <span>intermediate</span>
           </li>
         </ul>
-        <h3>Tools</h3>
+        <h3 class="tools-header">Tools</h3>
         <ul class="skills-list">
           <li>
             <img class="icon-img" src="images/figma.svg" alt="">
             <strong>Figma</strong>
-            <span>Proficient</span>
           </li>
           <li>
             <img class="icon-img" src="images/github-dark.svg" alt="">
             <strong>GitHub</strong>
-            <span>Proficient</span>
           </li>
           <li>
             <img class="icon-img" src="images/android.svg" alt="">
             <strong>Android studio</strong>
-            <span>Proficient</span>
           </li>
 
 
         </ul>
       </div>
-      <!--Projects section-->
+      <!--education section-->
+      <div class="project-container">
+        <div class="top-header-container">
+          <p class="skills-section-p">Journey
+          </p>
+          <h1>Education & Experience</h1>
+          <h2>Building expertise through continuous learning and practical projects</h2>
+        </div>
+
+        <div class="project-box">
+          <i class="uil uil-graduation-cap"></i>
+          <h3>Education</h3>
+          <label> Currently: 2nd year <br> Pursuing a Diploma in Software Development.</label>
+        </div>
+        <div class="project-box">
+          <i class="uil uil-award"></i>
+          <h3>Completed</h3>
+          <label> Higher Certificate in Mobile Application and Web Development: <strong>SAQA ID 117914</strong>
+          </label>
+        </div>
+        <div class="project-box">
+          <i class="uil uil-briefcase-alt"></i>
+          <h3>Projects</h3>
+          <label>Completed 5+ projects</label>
+        </div>
+      </div>
+
+      <!--recent project cards-->
       <section class="section" id="Projects">
-
-        <div class="project-container">
-          <div class="project-box">
-            <i class="uil uil-briefcase-alt"></i>
-            <h3>Completed</h3>
-            <label> Higher Certificate in Mobile Application and Web Development: <strong>SAQA ID 117914</strong>
-            </label>
-          </div>
-          <div class="project-box">
-            <i class="uil uil-award"></i>
-            <h3>Projects</h3>
-            <label>Completed 5+ projects</label>
-          </div>
-          <div class="project-box">
-            <i class="uil uil-graduation-cap"></i>
-            <h3>Education</h3>
-            <label> Currently: <br>Pursuing a Diploma in Software Development.</label>
+        <section id="projects-page">
+          <div class="top-header-skills">
+            <p class="skills-section-p">Portfolio
+            </p>
+            <h1>Featured Projects</h1>
+            <h3> selection of my recent work showcasing diverse development skills.</h3>
           </div>
 
-          <!--My Certificates section-->
-          <div class="top-header">
-            <img src="images/education.png" width="45px" height="45px">
-            <!--<a href="https://www.flaticon.com/free-icons/graduation-cap" title="graduation cap icons">Graduation cap icons created by Dewi Sari - Flaticon</a>-->
-            <h1>Certificates</h1>
-          </div>
-          <section id="certificates">
-            <div class="certificate-gallery">
-              <a href="assets/certificate.pdf" target="_blank">
-                <img src="assets/certificate-thumbnail.png" alt="Certificate" />
-              </a>
-            </div>
-          </section>
-          <section id="certificates">
-            <div class="certificate-gallery">
-              <a href="assets/Oracle_AI_Foundations_Certificate.pdf" target="_blank">
-                <img src="assets/Oracle AI foundations Thumbnail.png" alt="Certificate" />
-              </a>
-            </div>
-          </section>
+          <div class="card">
 
-
-
-
-          <section id="projects-page">
-
-            <!--recent project cards-->
-            <div class="top-header">
-              <img src="images/technical-support.png" width="35px" height="35px">
-              <!--<a href="https://www.flaticon.com/free-icons/set-up" title="set up icons">Set up icons created by rukanicon - Flaticon</a>-->
-              <h2> Projects</h2>
-
-            </div>
-            <div class="card">
-
-              <div class="project-card">
-                <h2>Menu Manager</h2>
-                <img class="pic-1" src="images/chef-menu.png" alt="">
-                <p>A React Native app for a private chef to manage menus.
-                </p>
-                <div class="tags">
-                  <span>TypeScript</span>
-                </div>
-                <div class="links">
-                  <a href="https://github.com/Sifisopk/Chef-Menu-App">Source Code <i class="fab fa-github"></i></a>
-                  <a href="videos/menu.mp4" target="_blank">View Video <i
-                      class="fa-solid fa-arrow-up-right-from-square">
-                    </i></a>
-
-                </div>
+            <div class="project-card">
+              <img class="pic-1" src="images/chef-menu.png" alt="">
+              <h2 id="project-text">Menu Manager</h2>
+              <p>A React Native app for a private chef to manage menus.
+              </p>
+              <div class="tags">
+                <span>TypeScript</span>
               </div>
+              <div class="links">
+                <a class="code-btn" href="https://github.com/Sifisopk/Chef-Menu-App">Code <i
+                    class="fab fa-github"></i></a>
+                <a class="view-btn" href="videos/menu.mp4" target="_blank">Video <i
+                    class="fa-solid fa-arrow-up-right-from-square">
+                  </i></a>
 
-              <div class="project-card">
-                <h2>Album release page</h2>
-                <img class="pic-1" src="images/album-page.png" alt="">
-                <p> Album release webpage to view and listen to the latest Albums.
-                </p>
-                <div class="tags">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>Javascript</span>
-                </div>
-                <div class="links">
-                  <a href="https://github.com/Sifisopk/Album-page">Source Code <i class="fab fa-github"></i></a>
-                  <a href="https://sifisopk.github.io/Album-page/">View Live <i
-                      class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
               </div>
-              <div class="project-card">
-                <h2>Image gallery</h2>
-                <img class="pic-1" src="images/image gallery.png" alt="">
-                <p> Propiks is your treasure chest of free, fabulous photos! 🎨✨
-                </p>
-                <div class="tags">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>Javascript</span>
-                </div>
-                <div class="links">
-                  <a href="https://github.com/Sifisopk/image-gallery">Source Code <i class="fab fa-github"></i></a>
-                  <a href="https://sifisopk.github.io/image-gallery/">View Live <i
-                      class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+            </div>
+
+            <div class="project-card">
+              <img class="pic-1" src="images/album-page.png" alt="">
+              <h2 id="project-text">Album release page</h2>
+              <p> Album release webpage to view and listen to the latest Albums.
+              </p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
               </div>
+              <div class="links">
+                <a class="code-btn" href="https://github.com/Sifisopk/Album-page">Code <i class="fab fa-github"></i></a>
+                <a class="view-btn" href="https://sifisopk.github.io/Album-page/">Live <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="project-card">
+              <img class="pic-1" src="images/image gallery.png" alt="">
+              <h2 id="project-text">Image gallery</h2>
+              <p> Propiks is your treasure chest of free, fabulous photos! 🎨✨
+              </p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+              </div>
+              <div class="links">
+                <a class="code-btn" href="https://github.com/Sifisopk/image-gallery">Code <i
+                    class="fab fa-github"></i></a>
+                <a class="view-btn" href="https://sifisopk.github.io/image-gallery/">Live <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </section>
+      <!--My Certificates section-->
+      <section id="certificate-page">
+        <div class="top-header-skills">
+          <p class="skills-section-p">Achievements
+          </p>
+          <h1>Certificates & Credentials</h1>
+          <h3> Professional certifications validating my technical expertise. </h3>
+        </div>
+
+        <div class="card">
+
+          <div class="certificate-card">
+
+            <img class="pic-2" src="assets/certificate-thumbnail.png" alt="">
+
+            <h3><span style="color: #000;">Mobile Application and Web Development </span></h3>
+
+            <p>IIE ROSEBANK COLLEGE
+            </p>
+            <div class="links">
+              <a href="assets/certificate.pdf" target="_blank">View Certificate <i
+                  class="fa-solid fa-arrow-up-right-from-square">
+                </i></a>
 
             </div>
-          </section>
+          </div>
+
+          <div class="certificate-card">
+            <img class="pic-2" src="assets/Oracle AI foundations Thumbnail.png" alt="">
+            <h3><span style="color: #000;">Oracle AI Foundations</span></h3>
+            <p> Oracle
+            </p>
+            <div class="links">
+              <a href="assets/Oracle_AI_Foundations_Certificate.pdf">View Certificate <i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+
         </div>
       </section>
+  </div>
+  </section>
 
 
 
 
-      <section class="section" id="contact">
-        <div class="top-header">
-          <h1>Contact info</h1>
-          <span>Looking for a junior web developer? Let's connect!</span>
+  <section class="section" id="contact">
+
+    <div class="top-header-skills">
+      <p class="skills-section-p">Get In Touch
+      </p>
+      <h1>Let's Work Together</h1>
+      <h1 id="contact-title">Looking for a junior web developer? I'd love to hear about your project and how I can
+        help
+        bring your ideas to life.</h1>
+    </div>
+    <div class="contact-card">
+      <div class="contact-col">
+        <div class="contact-info">
+          <img class="email-icon" src="images/mail.png" alt="mail" width="100px" height="100px">
+          <!--<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by ChilliColor - Flaticon</a>-->
+          <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+          <p><i class="uil uil-envelope">Email: sifisokhausela@gmail.com</i></p>
+          <p><i class="uil uil-phone">Phone: +27 78 426 9661</i></p>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="contact-info">
-              <img class="email-icon" src="images/mail.png" alt="mail" width="100px" height="100px">
-              <!--<a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by ChilliColor - Flaticon</a>-->
-              <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
-              <p><i class="uil uil-envelope">Email: sifisokhausela@gmail.com</i></p>
-              <p><i class="uil uil-phone">Phone: +27 78 426 9661</i></p>
+      </div>
+      <div class="contact-col">
+        <div class="form-control">
+          <form action="https://formspree.io/f/xzbykekb" method="POST">
+            <div class="form-inputs">
+              <input type="text" class="input-field" name="name" placeholder="Your Name" required>
+              <input type="email" class="input-field" name="_replyto" placeholder="Your Email" required>
             </div>
-          </div>
-          <div class="col">
-            <div class="form-control">
-              <form action="https://formspree.io/f/xzbykekb" method="POST">
-                <div class="form-inputs">
-                  <input type="text" class="input-field" name="name" placeholder="Your Name" required>
-                  <input type="email" class="input-field" name="_replyto" placeholder="Your Email" required>
-                </div>
-                <div class="text-area">
-                  <input type="text" class="input-subject" name="subject" placeholder="Subject" required>
-                  <textarea class="input-message" name="message" placeholder="Message" required></textarea>
-                </div>
-                <div class="form-button">
-                  <button class="btn">Send <i class="uil uil-message"></i></button>
-                </div>
-              </form>
+            <div class="text-area">
+              <input type="text" class="input-subject" name="subject" placeholder="Subject" required>
+              <textarea class="input-message" name="message" placeholder="Message" required></textarea>
             </div>
-          </div>
+            <div class="form-button">
+              <button class="btn">Send <i class="uil uil-message"></i></button>
+            </div>
+          </form>
         </div>
-      </section>
+      </div>
+    </div>
 
-    </main>
-    <!--footer-->
-    <footer>
-      <div class="middle-footer">
-        <ul class="footer-menu">
-          <li class="footer-menu-list">
-            <a href="#home">Home</a>
-          </li>
-          <li class="footer-menu-list">
-            <a href="#about">About</a>
-          </li>
-          <li class="footer-menu-list">
-            <a href="#Projects">Prjects</a>
-          </li>
-          <li class="footer-menu-list">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-social-icons">
-        <a href="https://www.linkedin.com/in/sifiso-khausela/" target="_blank">
-          <div class="icon">
-            <i class="uil uil-linkedin-alt"></i>
-          </div>
-        </a>
+  </section>
 
-        <a href="https://github.com/Sifisopk" target="_blank">
-          <div class="icon">
-            <i class="uil uil-github-alt"></i>
-          </div>
-        </a>
-      </div>
-      <div class="bottom-footer">
-        <p>Copyright &copy; <a href="#home" style="text-decoration: none;"><span style="color: #42f5d7;">sifiso
-              khausela</span></a> all rights reserved 2025</p>
-      </div>
-    </footer>
+  </main>
+  <!--footer-->
+  <footer>
+
+    <div class="footer-social-icons">
+      <a href="https://www.linkedin.com/in/sifiso-khausela/" target="_blank">
+        <div class="icon">
+          <i class="uil uil-linkedin-alt"></i>
+        </div>
+      </a>
+
+      <a href="https://github.com/Sifisopk" target="_blank">
+        <div class="icon">
+          <i class="uil uil-github-alt"></i>
+        </div>
+      </a>
+    </div>
+
+    <div class="bottom-footer">
+
+      <p>&copy; 2026 Sifiso Khausela. All rights reserved.</p>
+    </div>
+  </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
