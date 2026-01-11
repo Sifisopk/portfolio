@@ -177,7 +177,20 @@ label {
   text-align: center;
 }
 
+section,
+#about,
+#skills,
+#projects-page,
+#certificate-page,
+#contact {
+  scroll-margin-top: 100px;
+}
+
+
 .video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100vw;
   height: 140px;
@@ -197,81 +210,67 @@ label {
 /* Speech bubble */
 .speech-bubble {
   position: absolute;
-  bottom: 110px;
-  left: 50%;
-  transform: translateX(-50%) scale(0);
+  bottom: 50px;
+  left: 61%;
   padding: 8px 14px;
 
   background: #ffffff;
   color: #0d1f47;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 
   opacity: 0;
-  animation: bubbleShow 10s linear infinite;
+  transform: translateX(-50%) scale(0.8);
+
+  animation: bubbleSmooth 10s ease forwards;
+  animation-delay: 2s; /* ⏱ delay before showing */
 }
+
+
 
 /* Bubble tail */
 .speech-bubble::after {
   content: "";
   position: absolute;
-  bottom: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 6px 6px 0;
+  left: -6px;         
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 10px 10px 10px 0;
   border-style: solid;
-  border-color: #ffffff transparent transparent;
+  border-color: transparent #fff transparent transparent;
 }
 
-/* =====================
-   ANIMATIONS
-   ===================== */
 
-/* Runner movement */
-@keyframes runPauseRun {
-  /* Start off-screen */
-  0% {
-    left: -160px;
-  }
 
-  /* Run to center */
-  40% {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  /* PAUSE in center */
-  55% {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  /* Run off screen */
-  100% {
-    left: 110%;
-  }
-}
 
 /* Speech bubble timing */
-@keyframes bubbleShow {
-  0%, 35% {
+@keyframes bubbleSmooth {
+  0% {
     opacity: 0;
-    transform: translateX(-50%) scale(0);
+    transform: translateX(-50%) scale(0.8);
   }
 
-  /* Appear during pause */
-  45%, 55% {
+  /* Smooth appear */
+  15% {
     opacity: 1;
     transform: translateX(-50%) scale(1);
   }
 
-  65%, 100% {
+  /* Stay visible */
+  70% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+
+  /* Smooth disappear */
+  100% {
     opacity: 0;
-    transform: translateX(-50%) scale(0);
+    transform: translateX(-50%) scale(0.8);
   }
 }
+
 
 /*---featured box---*/
 
@@ -1868,5 +1867,13 @@ flex-wrap: wrap;
     display:none ;
   }
 
+  section,
+#about,
+#skills,
+#projects-page,
+#certificate-page,
+#contact {
+  scroll-margin-top: 100px;
+}
 
 }
