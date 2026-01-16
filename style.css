@@ -333,7 +333,7 @@ section,
   display: flex;
   align-items: center;
   gap: 8px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 /* Main dot */
@@ -341,7 +341,7 @@ section,
   position: relative;
   width: 8px;
   height: 8px;
-  background-color: #24a08b;
+  background-color: blue;
   border-radius: 50%;
 }
 
@@ -352,7 +352,7 @@ section,
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background-color: rgba(5, 159, 64, 0.4);
+  background-color:  blue;
   animation: pulse 2s infinite;
 }
 
@@ -1718,11 +1718,21 @@ font-size:17px ;
 }
   
 .hello h2{
-  margin-top: -55px;
+  margin-top: -75px;
   font-size: 42px;
   font-weight: 700;
   line-height: 72px;
 }
+
+.hello h2 span{
+  font-size: 50px;
+}
+
+  .text-info {
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+  }
   
 .featured-image, .image{
   width: 100%;
@@ -1752,6 +1762,7 @@ font-size:17px ;
 
 .contact-info p{
 text-align: center;
+
 }
 
 
@@ -1875,5 +1886,57 @@ flex-wrap: wrap;
 #contact {
   scroll-margin-top: 100px;
 }
+/* Speech bubble */
+.speech-bubble {
+  width: 50%;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  padding: 4px 5px;
+
+  background: #ffffff;
+  color: #0d1f47;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  opacity: 0;
+  transform: translateX(-50%) scale(0.8);
+
+  animation: bubbleSmooth 10s ease forwards;
+  animation-delay: 2s; /* ⏱ delay before showing */
+}
+
+.top-header-skills{
+   font-size: 14px;
+}
+
+.top-header-container h1{
+  font-size: 25px;
+}
+
+
+.top-header-container h2{
+  width: 80%;
+  font-size: 15px;
+  margin-left: 35px;
+}
+
+.skills-section-p{
+  background-color: #e8eefa;
+  font-size: 13px;
+}
+
+.project-box label{
+  font-size: 14px;
+}
+.project-card p{
+  font-size: ;
+}
+#contact-title{
+  font-size: 14px;
+}
+
 
 }
