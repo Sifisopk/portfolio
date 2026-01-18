@@ -387,7 +387,7 @@ section,
 
 .text-btn {
   display: flex;
-  border-radius: 8px;
+  border-radius: 100px;
   cursor: pointer;
   gap: 20px;
 }
@@ -1699,9 +1699,10 @@ font-size:17px ;
   }
 
  .nav-menu-btn {
-    color: #000;
-     margin-top: -15%;
-  }
+  color: #000;
+  position: relative;
+  top: -28px; /* adjust slightly */
+}
 
   .nav-logo {
   position: relative;
@@ -1710,7 +1711,7 @@ font-size:17px ;
 }
 
 .video-container {
-  margin-top: 15%;
+  margin-top:5%;
   position: relative;
   width: 100vw;
   height: 140px;
@@ -1718,7 +1719,7 @@ font-size:17px ;
 }
   
 .hello h2{
-  margin-top: -75px;
+  margin-top: -85px;
   font-size: 42px;
   font-weight: 700;
   line-height: 72px;
@@ -1779,9 +1780,10 @@ text-align: center;
 .btn {
   text-decoration: none;
   font-size: 15px;
-  padding: 2px 5px;
+padding-top:10px;
+  padding: 2px 8px
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 100px;
   background:transparent;
   font-weight: 500;
   transition: all 0.5s ease;
@@ -1890,7 +1892,7 @@ flex-wrap: wrap;
 .speech-bubble {
   width: 50%;
   position: absolute;
-  bottom: 100px;
+  bottom: 10px;
   left: 50%;
   padding: 4px 5px;
 
@@ -1931,9 +1933,7 @@ flex-wrap: wrap;
 .project-box label{
   font-size: 14px;
 }
-.project-card p{
-  font-size: ;
-}
+
 #contact-title{
   font-size: 14px;
 }
