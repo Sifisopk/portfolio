@@ -1083,8 +1083,7 @@ padding: 20px 0px;
 .skills-list li:hover {
   border: 1px solid #007BFF;
   box-shadow: 0 6px 12px rgba(66, 245, 215, 0.2);
-  transform: translateY(-5px);
-  transform: rotate(45deg) scale(1.2) translateX(20px);
+  transform: rotate(25deg) scale(0.8) translateX(20px);
   background-color: rgba(232, 238, 250, 0.2);
 }
 
@@ -1939,5 +1938,17 @@ flex-wrap: wrap;
   font-size: 14px;
 }
 
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 0;
+}
 
+.footer-social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
 }
