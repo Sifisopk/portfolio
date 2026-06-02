@@ -812,7 +812,7 @@ padding: 20px 0px;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 10px 5px  60px;
-  width: 25%;
+  width: 27%;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -883,7 +883,12 @@ padding: 20px 0px;
 }
 
 
-
+.links{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+}
 
 .code-btn{
    text-decoration: none;
@@ -1137,99 +1142,6 @@ padding: 20px 0px;
 
 
 
-/*Flappy game styling*/
-
-canvas {
-  display: block;
-  margin: 30px 0px 0px 50px ;
-  border-radius: 10px;
-  background-color: #f0f0f0;
-}
-
-.game-text{
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  color: #979797;
-}
-.game-container {
-  position: relative;
-  display: inline-block;
-}
-
-
-.flappy-btn {
-  position: absolute;
-  left: 35%;
-  transform: translateX(-50%);
-  transform: translatey(100%);
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  overflow: hidden;
-  transition: all 0.4s ease;
-  min-width: 100px;
-  z-index: 1;
-}
-
-.neon-pulse {
-  border: 2px solid #AFC9DC;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-  overflow: visible;
-}
-
-.neon-pulse::before,
-.neon-pulse::after {
-  content: "";
-  position: absolute;
-  inset: -4px;
-  border: 2px solid #AFC9DC;
-  border-radius: inherit;
-  animation: pulseOut 2s ease-out infinite;
-  opacity: 0;
-}
-
-.neon-pulse::after {
-  animation-delay: 1s;
-}
-
-@keyframes pulseOut {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
-
-
-#startBtn {
-  top: 50%;
-}
-
-#restartBtn {
-  top: 50%;
-}
-
-.instructions {
-  position: absolute;
-  top: 35%;
-  left: 54%;
-  transform: translateX(-50%);
-  font-size: 20px;
-  font-weight: 600;
-  color: #AFC9DC;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.4);
-}
 
 /*---contact box---*/
 
@@ -1416,6 +1328,13 @@ margin-left: 20px;
 
 
 /*--Responsive design--*/
+/*---media query 1400px---*/
+@media (min-width: 1400px) {
+  .project-card{
+  max-width: 400px;
+}
+}
+
 /*---media query 1024px---*/
 
 @media only screen and (max-width: 1040px) {
