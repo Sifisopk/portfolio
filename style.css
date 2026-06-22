@@ -1333,6 +1333,13 @@ margin-left: 20px;
   .project-card{
   max-width: 400px;
 }
+.project-box{
+  max-width: 17%;
+}
+
+.about-info{
+  max-width: 60%;
+}
 }
 
 /*---media query 1024px---*/
@@ -1347,13 +1354,46 @@ section, div {
     padding: 0;
   }
 
+    .project-card {
+    margin: 10px ;
+    margin-left: 30px;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .certificate-card{
+    width: 45%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*---media query 900px---*/
 
 @media only screen and (max-width: 900px) {
 
-
+  .project-card {
+    margin: 10px ;
+    margin-left: 30px;
+    width: 95%;
+    display: flex;
+flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
   
 .nav-logo {
   position: relative;
@@ -1391,6 +1431,7 @@ section, div {
     justify-content: center;
     align-items: center;
     background: #0d1f47;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     width: 300px;
     border-radius: 0px 0px 30px 0px;
