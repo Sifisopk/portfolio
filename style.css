@@ -294,7 +294,9 @@ section,
 
 
 /*---featured text---*/
-
+.text-dark{
+  color: #000;
+}
 .hello h2{
   font-family: sans-serif;
   font-size: 70px;
@@ -547,7 +549,7 @@ height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about-info {
@@ -664,7 +666,7 @@ article .icon {
   gap: 20px;
   flex-wrap: wrap;
   background-color: #f8f9f9;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .top-header-container {
@@ -787,7 +789,7 @@ article .icon {
 .card {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 #projects-page{
@@ -814,6 +816,8 @@ padding: 20px 0px;
   margin: 10px 5px  60px;
   width: 27%;
   height: auto;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -890,6 +894,10 @@ padding: 20px 0px;
   justify-content: space-between;
 }
 
+.project-card .links {
+  margin-top: auto;
+}
+
 .code-btn{
    text-decoration: none;
   font-size: 15px;
@@ -919,7 +927,7 @@ padding: 20px 0px;
 
 #certificate-page{
   background-color:#f8f9f9 ;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 
@@ -1054,7 +1062,7 @@ padding: 20px 0px;
 .skills-section {
   margin-bottom: 30px;
     padding: 0 15px;
-    height: 80vh;
+    min-height: 80vh;
 
 }
 .top-header-skills h3{
@@ -1175,7 +1183,7 @@ padding: 20px 0px;
 
 .contact-col{
   width: 75%;
-height: 80vh;
+min-height: 80vh;
 }
 
 #email-icon {
@@ -1378,6 +1386,11 @@ section, div {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+
+  .contact-info {
+    margin-left: 0;
+    width: 80%;
   }
 }
 
